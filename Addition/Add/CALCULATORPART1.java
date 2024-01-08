@@ -9,10 +9,9 @@ public class CALCULATORPART1{
         double num1, num2;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter numbers here");
+        
 
-        num1 = sc.nextDouble();
-        num2 = sc.nextDouble();
-        System.out.println("Enter operator here");
+    
 
         char op = sc.next().charAt(0);
         double o = 0;
@@ -34,7 +33,12 @@ public class CALCULATORPART1{
                 break;
 
             case '^':
-              
+                o = Math.pow(num1, num2);
+                break;
+
+            case '2':
+                o = Math.sqrt(num1);
+                break;
 
             default:
                 System.out.println("Try Again");
